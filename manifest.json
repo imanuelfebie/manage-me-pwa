@@ -5,5 +5,5 @@
 	"start_url": "manage_me/templates/home.html",
 	"display": "standalone",
 	"background_color": "#e0e0e0 ",
-	"theme_color": "#9575cd",
+	"theme_color": "#9575cd"
 }

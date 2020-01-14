@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}New Project{% endblock title %}
+
+{% include 'navbar.html' %}
+
+{% block body %}
+<div class="row">
+	<div class="card-panel small z-depth-1 animated jackInTheBox">
+		<div class="center-align">
+			<h6 class="deep-purple-text">Add new project</h6>
+			<form action="" method="post">
+				<div class="input-field">
+					{{ form.name(class="validate") }}
+					{{ form.name.label() }}
+				</div>
+				<div class="input-field">
+					{{ form.due_date(class="datepicker") }}
+				</div>
+				<div class="input-field">
+					{{ form.submit(class="btn deep-purple") }}
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="fixed-action-btn">
+	<a href="{{ url_for('projects.home') }}" class="btn-floating btn-large deep-purple">
+		<i class="material-icons">home</i>
+	</a>
+</div>
+{% endblock body %}
+
