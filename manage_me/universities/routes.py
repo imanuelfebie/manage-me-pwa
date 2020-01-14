@@ -10,3 +10,7 @@ def course_list():
 @universities.route('/course/detail')
 def course_detail():
     return render_template('course_detail.html')
+
+@universities.route('/course/new')
+def course_create():
+    return render_template('course_create.html')

@@ -17,6 +17,10 @@ def project_create():
     form = ProjectCreateForm()
     return render_template('project_create.html', form=form)
 
+#@projects.route('projects/collaboratos/add')
+#def project_collaborator_add():
+#    return render_template('')v
+
 @projects.route('/projects/entrepreneurship')
 def project_detail():
     return render_template('project_detail.html')

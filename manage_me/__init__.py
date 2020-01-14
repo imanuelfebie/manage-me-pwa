@@ -1,10 +1,11 @@
 from flask import Flask
 from flask_sqlalchemy  import SQLAlchemy
+from flask_pagedown import PageDown
 
 # flask object
-app = Flask(
-        __name__,
-        static_url_path='')
+app = Flask(__name__)
+
+page_down = PageDown(app)
 
 # database instance
 db = SQLAlchemy(app)

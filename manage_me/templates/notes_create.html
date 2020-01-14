@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Note{% endblock title %}
+
+{% include 'navbar.html' %}
+
+{% block body %}
+<div class="card-panel">
+	<div class="row valign-wrapper">	
+		<div class="col s12">
+			<div class="input-field">
+				<input type="text" name="note" id="" class="materialize-textarea">
+				<label for="note">Start writing notes...</label>
+			</div>	
+		</div>
+	</div>
+</div>
+{% endblock body %}

@@ -13,6 +13,7 @@
 					<i class="material-icons deep-purple-text lighten-2">school</i>
 				</div>
 				<div class="col s10">
+					<small class="grey-text">Course</small>
 					<h6 class="deep-purple-text">Entrepreneurship Hatchery</h6>
 				</div>	
 			</div>
@@ -20,10 +21,41 @@
 	</a>
 </div>
 
+<div class="row">
+	<a href="{{ url_for('universities.course_detail') }}">
+		<div class="card-panel small animated jackInTheBox">
+			<div class="row valign-wrapper">
+				<div class="col s2">
+					<i class="material-icons deep-purple-text lighten-2">school</i>
+				</div>
+				<div class="col s10">
+					<small class="grey-text">Course</small>
+					<h6 class="deep-purple-text">Kewarganegaraan</h6>
+				</div>	
+			</div>
+		</div>
+	</a>
+</div>
+
+<div class="row">
+	<a href="{{ url_for('universities.course_detail') }}">
+		<div class="card-panel small animated jackInTheBox">
+			<div class="row valign-wrapper">
+				<div class="col s2">
+					<i class="material-icons deep-purple-text lighten-2">school</i>
+				</div>
+				<div class="col s10">
+					<small class="grey-text">Course</small>
+					<h6 class="deep-purple-text">Database Systems</h6>
+				</div>	
+			</div>
+		</div>
+	</a>
+</div>
 <!-- Floating button redirecting to homepage -->
 <div class="fixed-action-btn">
-	<a href="{{ url_for('projects.home') }}" class="btn-floating btn-large deep-purple">
-		<i class="material-icons">home</i>
+	<a href="{{ url_for('universities.course_create') }}" class="btn-floating btn-large deep-purple">
+		<i class="material-icons">add</i>
 	</a>
 </div>
 {% endblock body %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}New course{% endblock title %}
+
+{% include 'navbar.html' %}
+
+{% block body %}
+<div class="card-panel animated jackInTheBox">
+	<div class="row valign-wrapper">
+		<div class="col s2">
+			<i class="tiny material-icons deep-purple-text">school</i>
+		</div>
+		<div class="col s10">
+			<h6 class="deep-purple-text">New Course</h6>
+			<form action="" method="post">
+				<div class="input-field">
+					<input type="text" name="name" class="validate">
+					<label for="name">Name</label>
+				</div>
+				<div class="input-field">
+					<a href="{{ url_for('universities.course_list') }}" class="btn-small deep-purple">Submit</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock body %}

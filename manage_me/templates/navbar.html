@@ -1,28 +1,17 @@
-<div class="navbar-fixed">
-<nav>
-	<div class="nav-wrapper deep-purple lighten-2">
-		<ul>
-			<!-- Sidenav trigger -->
-			<li><a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
-		</ul>
-	</div>
-</nav>
+<div class="navbar-fixed deep-purple lighten-2">
+	<nav class="cointainer deep-purple lighten-2">
+		<div class="nav-wrapper deep-purple lighten-2 container">
+			<a href="{{ url_for('projects.home') }}" class="brand-logo left">ManageMe</a>
+			<ul class="right">
+				<li><a href="{{ url_for('preferences.user_preferences') }}"><i class="tiny material-icons">build</i></a></li>
+				<li><a href="{{ url_for('universities.course_list') }}"><i class="material-icons">school</i></a></li>
+			</ul>
+		</div>
+	</nav>
 </div>
 
-<ul id="slide-out" class="sidenav">
-	<li>
-		<div class="user-view">
-			<div class="background">
-				<img src="" alt="" srcset="">
-			</div>
-		</div>
-	</li>	
-	<li><a href="{{ url_for('preferences.user_preferences') }}">
-			<i class="material-icons">build</i>
-			Settings
-	</a></li>
-	<li><a href="{{ url_for('universities.course_list') }}">
-			<i class="material-icons">school</i>
-			Courses>
-	</a></li>
+<!-- -->
+<ul class="sidenav" id="side">
+	<li><a href="{{ url_for('preferences.user_preferences') }}"><i class="material-icons">build</i></a></li>
 </ul>
+
