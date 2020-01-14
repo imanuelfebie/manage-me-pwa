@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Entrepreneurship Hatchery{% endblock title %}
+
+{% include 'navbar.html' %}
+
+{% block body %}
+<!-- Floating chart -->
+
+<!-- Milestones -->
+
+<!-- Floating button redirecting to homepage -->
+<div class="fixed-action-btn">
+	<a href="{{ url_for('projects.home') }}" class="btn-floating btn-large deep-purple">
+		<i class="material-icons">home</i>
+	</a>
+</div>
+{% endblock body %}
+
