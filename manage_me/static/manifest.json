@@ -2,8 +2,9 @@
 	"name": "Manage Me",
 	"short_name": "Manage Me",
 	"lang": "en-US",
-	"start_url": "manage_me/templates/home.html",
+	"start_url": "/",
 	"display": "standalone",
+	"orientation": "portrait",
 	"background_color": "#e0e0e0 ",
 	"theme_color": "#9575cd"
 }
