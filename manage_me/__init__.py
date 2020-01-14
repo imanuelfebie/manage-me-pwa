@@ -13,7 +13,11 @@ app.config['SECRET_KEY'] = '123456'
 from manage_me.users.routes import users 
 from manage_me.universities.routes import universities
 from manage_me.projects.routes import projects
+from manage_me.notes.routes import notes
+from manage_me.preferences.routes import preferences
 
 app.register_blueprint(users)
 app.register_blueprint(universities)
 app.register_blueprint(projects)
+app.register_blueprint(notes)
+app.register_blueprint(preferences)

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Preferences{% endblock title %}
+
+{% include 'navbar.html' %}
+
+{% block body %}
+<div class="row">
+	<div class="col s12">
+		<div class="card-panel animated jackInTheBox">
+			<h6 class="deep-purple-text">Preferences</h6>
+		</div>
+	</div>
+</div>
+
+<!-- Floating action button -->
+<div class="fixed-action-btn">
+	<a href="{{ url_for('projects.home') }}" class="btn-floating btn-large deep-purple">
+		<i class="material-icons">home</i>
+	</a>
+</div>
+{% endblock body %}
