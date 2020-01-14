@@ -1,3 +1,8 @@
+// sidenav
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
+
 // Initialize floatin action button
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');

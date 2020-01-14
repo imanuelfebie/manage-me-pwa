@@ -1,33 +1,25 @@
 <div class="navbar-fixed">
 <nav>
 	<div class="nav-wrapper deep-purple lighten-2">
-		<ul class="center">
-			<li>
-				<a href="{{ url_for('preferences.user_preferences') }}">
-					<i class="material-icons">build</i>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<i class="material-icons">chat</i>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<i class="material-icons">today</i>
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<i class="material-icons">notifications</i>
-				</a>
-			</li>
-			<li>
-				<a href="{{ url_for('universities.course_list') }}">
-					<i class="material-icons">school</i>
-				</a>
-			</li>
-		</ul>
+
 	</div>
 </nav>
 </div>
+
+<ul id="slide-out" class="sidenav">
+	<li>
+		<div class="user-view">
+			<div class="background">
+				<img src="" alt="" srcset="">
+			</div>
+		</div>
+	</li>	
+	<li><a href="{{ url_for('preferences.preferences') }}">
+			<i class="material-icons">build</i>
+			Settings
+	</a></li>
+	<li><a href="{{ url_for('universities.course_list') }}">
+			<i class="material-icons">school</i>
+			Courses>
+	</a></li>
+</ul>
