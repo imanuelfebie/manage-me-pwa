@@ -11,3 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
     $('.datepicker').datepicker();
 });
+
+// Collapsible
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+});

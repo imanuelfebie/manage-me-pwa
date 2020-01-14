@@ -6,3 +6,7 @@ universities = Blueprint('universities', __name__)
 def course_list():
     
     return render_template('course_list.html')
+
+@universities.route('/course/detail')
+def course_detail():
+    return render_template('course_detail.html')

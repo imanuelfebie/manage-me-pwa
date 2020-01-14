@@ -6,17 +6,17 @@
 <div class="row">
 	<div class="card-panel small z-depth-1 animated jackInTheBox">
 		<div class="center-align">
-			<h6 class="deep-purple-text">Add new project</h6>
+			<h6 class="deep-purple-text">Milestone for Self Management App</h6>
 			<form action="" method="post">
 				<div class="input-field">
 					{{ form.name(class="validate") }}
 					{{ form.name.label() }}
 				</div>
 				<div class="input-field">
-					{{ form.due_date(class="datepicker") }}
+
 				</div>
 				<div class="input-field">
-					{{ form.submit(class="btn deep-purple") }}
+					<a href="{{ url_for('projects.project_detail') }}" class="btn deep-purple">Add</a>
 				</div>
 			</form>
 		</div>

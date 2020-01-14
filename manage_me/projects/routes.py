@@ -17,12 +17,14 @@ def project_create():
     form = ProjectCreateForm()
     return render_template('project_create.html', form=form)
 
-
-
+@projects.route('/projects/entrepreneurship')
+def project_detail():
+    return render_template('project_detail.html')
 
 @projects.route('/milestone/create')
 def milestone_create():
     form = MilestoneCreateForm()
+
     return render_template('milestone_create.html', form=form)
     
 

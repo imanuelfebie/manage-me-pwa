@@ -5,6 +5,17 @@
 {% include 'navbar.html' %}
 
 {% block body %}
+<!-- Info -->
+<ul class="collapsible">
+	<li>
+		<div class="collapsible-header"><i class="material-icons deep-purple-text">info</i></div>
+		<div class="collapsible-body">
+			Creating projects allows you to manage and organize your projects. You create one by filling in the form below
+		</div>
+	</li>
+</ul>
+
+<!-- Project form -->
 <div class="row">
 	<div class="card-panel small z-depth-1 animated jackInTheBox">
 		<div class="center-align">
@@ -18,7 +29,7 @@
 					{{ form.due_date(class="datepicker") }}
 				</div>
 				<div class="input-field">
-					{{ form.submit(class="btn deep-purple") }}
+					<a href="{{ url_for('projects.project_detail') }}" class="btn deep-purple lighten-2">Add project</a>
 				</div>
 			</form>
 		</div>

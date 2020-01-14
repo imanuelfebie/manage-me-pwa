@@ -7,13 +7,80 @@
 {% block body %}
 <!-- Floating chart -->
 
-<!-- Milestones -->
+
+
+<div class="row">
+	<!-- -->
+	<div class="col s12">
+		<div class="card-panel small animated jackIntheBox">
+			<div class="row valign-wrapper">
+				<div class="col s2">
+					<i class="material-icons tiny deep-purple-text">work</i>
+				</div>
+				<div class="col s10">
+					<small class="grey-text">Entrepreneurship Hatchery</small>
+					<h6 class="deep-purple-text">Self Management App</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Milestones -->
+	<div class="container">
+		<h5 class="animated fadeInLeft">Milestones</h5>
+	</div>
+	<div class="col s12 l6">
+		<div class="card-panel small animated jackIntheBox">
+			<div class="row valign-wrapper">
+				<div class="col s2">
+					<form action="">
+					<p>
+						<label for="">
+							<input type="checkbox" id="indeterminate-checkbox">
+							<span></span>
+						</label>
+					</p>
+					</form>
+				</div>
+				<div class="col s10 l">
+					<small class="grey-text">Due on 18 Dec 2020</small>
+					<h6 class="deep-purple-text">Finish prototype</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col s12 l6">
+		<div class="card-panel small animated jackIntheBox">
+			<div class="row valign-wrapper">
+				<div class="col s2">
+					<form action="">
+					<p>
+						<label for="">
+							<input type="checkbox" id="indeterminate-checkbox" checked="checked">
+							<span></span>
+						</label>
+					</p>
+					</form>
+				</div>
+				<div class="col s10">
+					<small class="grey-text">Done</small>
+					<h6 class="deep-purple-text">Business Model Canvas</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- Floating button redirecting to homepage -->
 <div class="fixed-action-btn">
-	<a href="{{ url_for('projects.home') }}" class="btn-floating btn-large deep-purple">
-		<i class="material-icons">home</i>
+	<a class="btn-floating btn-large deep-purple">
+		<i class="material-icons">add</i>
 	</a>
+	<ul>
+		<li><a href="{{ url_for('projects.milestone_create') }}" class="btn-floating red"><i class="material-icons">access_time</i></a></li>
+		<li><a href="" class="btn-floating yellow"><i class="material-icons">edit</i></a></li>
+	</ul>
 </div>
 {% endblock body %}
 

@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}Course details{% endblock title %}
+
+{% include 'navbar.html' %}
+
+{% block body %}
+<div class="row">
+	<div class="col s12">
+		<div class="card-panel small">
+			<div class="row valign-wrapper">
+				<div class="col s2">
+					<i class="material-icons tiny deep-purple-text">school</i>
+				</div>
+				<div class="col s10">
+					<h6 class="grey-text">Course details</h6>
+					<h5 class="deep-purple-text">Entrepreneurship Hatchery</h5>
+				</div>
+			</div>
+			<div class="row valign-wrapper">
+				<div class="col s2">
+					<i class="material-icons tiny deep-purple-text">work</i>
+				</div>
+				<div class="col s10">
+					<a href="{{ url_for('projects.project_detail') }}">
+						<small class="grey-text">Project due on 15 Jan 2020</small>
+						<h6 class="deep-purple-text">Self Management App</h6>
+						<div class="progress">
+							<div class="determinate" style="width: 90%"></div>
+						</div>
+					</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="col s6">
+		<div class="card-panel small">
+			<div class="row valign wrapper">
+				<div class="col s2">
+
+				</div>
+				<div class="col s10">
+					<h6 class="deep-purple-text"><a href="" class="deep-purple-text">Notes 1</a></h6>
+					<small class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque ea illum. Sed, nisi omnis consequuntur nulla dolores nostrum, modi cumque quibusdam</small>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col s6">
+		<div class="card-panel">
+			<div class="row valign wrapper">
+				<div class="col s2">
+				</div>
+				<div class="col s10">
+					<h6><a href="" class="deep-purple-text">Notes 2</a></h6>
+					<small class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque ea illum. Sed, nisi omnis consequuntur nulla dolores nostrum, modi cumque quibusdam</small>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="fixed-action-btn">
+	<a class="btn-floating btn-large deep-purple">
+		<i class="material-icons">add</i>
+	</a>
+	<ul>
+		<li><a href="" class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+	</ul>
+</div>
+{% endblock body %}
+
