@@ -20,3 +20,14 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.modal').modal();
 });
+
+// summernote
+$(document).ready(function() {
+  $('#summernote').summernote({
+	  	placeholder: "Write your notes here...",
+	  	tabsize: 2,
+		height: 300,
+	  	minHeigh: null,
+	  	focus: true
+  });
+});

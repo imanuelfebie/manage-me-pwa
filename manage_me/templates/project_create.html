@@ -20,13 +20,23 @@
 	<div class="card-panel small z-depth-1 animated jackInTheBox">
 		<div class="center-align">
 			<h6 class="deep-purple-text">Add new project</h6>
+
 			<form action="" method="post">
+				<div class="input-field">
+					<select>
+						<option value="" disabled selected>Choose Course</option>
+						<option value="1">Entrepreneurship Hatchery</option>
+						<option value="2">Database Systems</option>
+						<option value="3">Kewarganegaraan</option>
+					</select>
+				</div>
 				<div class="input-field">
 					{{ form.name(class="validate") }}
 					{{ form.name.label() }}
 				</div>
 				<div class="input-field">
-					{{ form.due_date(class="datepicker") }}
+					<input type="text" name="date" class="datepicker">
+					<label for="date">Due date</label>
 				</div>
 				<div class="input-field">
 					<a href="{{ url_for('projects.project_detail') }}" class="btn deep-purple lighten-2">Add project</a>
